@@ -12,4 +12,6 @@ kubectl apply -f jicofo-deploy.yaml &&
 kubectl apply -f web-deploy.yaml &&
 kubectl apply -f web-service.yaml &&
 
+kubectl apply -f ingress.yaml &&
+
 echo all deployments and services applied '(o_O)' 
