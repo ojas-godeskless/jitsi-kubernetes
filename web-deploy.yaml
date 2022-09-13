@@ -28,7 +28,7 @@ spec:
             - name: ENABLE_XMPP_WEBSOCKET # added
               value: "0"
             - name: PUBLIC_URL # added
-              value: https://10.251.11.137:32443
+              value: https://jitsiunauth.godeskless.com
             - name: XMPP_SERVER
               value: prosody
             - name: JICOFO_AUTH_USER
