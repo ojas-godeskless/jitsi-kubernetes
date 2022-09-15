@@ -30,7 +30,7 @@ spec:
             - name: XMPP_SERVER
               value: prosody
             - name: DOCKER_HOST_ADDRESS
-              value: 10.251.11.137
+              value: 10.251.11.137 # CHANGE THIS to your own Server IP/Instance IP
             - name: XMPP_DOMAIN
               value: meet.jitsi
             - name: XMPP_AUTH_DOMAIN
