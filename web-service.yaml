@@ -33,10 +33,10 @@ metadata:
 spec:
  tls:
  - hosts:
-    - jitsimeet2.godeskless.com
+    - jitsimeet2.godeskless.com # CHANGE THIS to your own domain
     secretName: jitsi-app-tls
  rules:
- - host: jitsimeet2.godeskless.com
+ - host: jitsimeet2.godeskless.com # CHANGE THIS to your own domain
    http:
      paths:
      - path: /
