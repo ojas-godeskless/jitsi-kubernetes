@@ -29,7 +29,12 @@ metadata:
   namespace: jitsi
   annotations:
    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+   cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
+ tls:
+ - hosts:
+    - jitsimeet2.godeskless.com
+    secretName: jitsi-app-tls
  rules:
  - host: jitsimeet2.godeskless.com
    http:
