@@ -22,19 +22,19 @@ spec:
 
 # http://{NODE-IP}:32080
 ---
-#  apiVersion: networking.k8s.io/v1beta1
-#  kind: Ingress
-#  metadata:
-#    name: jitsi
-#    namespace: jitsi
-#    annotations:
-#     nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
-#  spec:
-#   rules:
-#   - host: jitsi.k8s.com
-#     http:
-#       paths:
-#       - path: /
-#         backend:
-#           serviceName: web
-#           servicePort: https
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: jitsi
+  namespace: jitsi
+  annotations:
+   nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+spec:
+ rules:
+ - host: jitsimeet2.godeskless.com
+   http:
+     paths:
+     - path: /
+       backend:
+         serviceName: web
+         servicePort: https
